@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+  box-sizing: border-box;
+}
+
+.hero {
+  background-image: url("background.jpg");
+  background-size: cover;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  /* font-weight: 500; */
+  margin-top: -50px;
+  margin-bottom: 25px;
+}
+
+.hero span {
+  color: #ff2963;
+}
+
+textarea {
+  width: 600px;
+  height: 250px;
+  background: #413d84c0;
+  color: #fff;
+  font-size: 15px;
+  border: 0;
+  outline: 0;
+  padding: 20px;
+  border-radius: 10px;
+  resize: none;
+  margin-bottom: 30px;
+}
+
+textarea::placeholder {
+  font-size: 16px;
+  color: #ddd;
+}
+
+.row {
+  width: 600px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+button {
+  background: #ff2963;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 35px;
+  border: 0;
+  outline: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+}
+
+button ion-icon {
+  margin-right: 10px;
+}
+
+select {
+  flex: 1;
+  color: #fff;
+  background: #403d84c0;
+  height: 50px;
+  padding: 0 20px;
+  outline: 0;
+  border: 0;
+  border-radius: 35px;
+  appearance: none;
+}
+
+.drop {
+  margin-left: -50px;
+}
+
+@media (min-width: 415px) and (max-width: 650px) {
+  textarea {
+    width: 350px;
+  }
+  button {
+    padding: 5px;
+    font-size: 1.1rem;
+    border-radius: 14px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: normal;
+  }
+  .row {
+    width: 350px;
+    gap: 30px;
+  }
+  button ion-icon {
+    margin-right: 1px;
+  }
+  .hero h1 {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 415px) {
+  textarea {
+    width: 250px;
+  }
+  button {
+    font-size: 0.9rem;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-weight: normal;
+    margin-top: 1rem;
+    margin-left: 50px;
+  }
+  .row {
+    width: 200px;
+    display: block;
+  }
+  button ion-icon {
+    margin-right: 10px;
+  }
+
+  .hero h1 {
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+  }
+  select {
+    margin-left: -40px;
+  }
+  .drop {
+    width: 0px;
+  }
+}
